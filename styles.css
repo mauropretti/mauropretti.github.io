@@ -8,8 +8,43 @@
       background-repeat: no-repeat;
       margin: auto;
   }
+  .contenedor{
+  width: min(100%, 69em);
+}
+.contenedor-s{
+  width: min(100%, 33.5em); /* 16px => 537 / 16 = 33.5625 */
+}
+  .nav {
+    /* display: grid;
+    grid-template-columns: 1fr auto; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "museo-sans", sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+    text-decoration: none; 
+  }
   
+  .nav p{
+    font-weight: 700;
+    font-size: 2.12rem;
+    margin: 0;
+  }
   
+  .nav ul{
+    display: inline-flex;
+    list-style-type: none;
+    gap: 16px;
+    margin:0;
+    padding:0;
+  }
+  .nav link{
+    display: inline-flex;
+    list-style-type: none;
+    text-decoration: none; 
+  }
   .h2{ 
       font-family: "museo-sans", sans-serif;
       font-size: 22px;
@@ -18,26 +53,112 @@
   width: 320px;
   
   }
+  .proyectos{
+    background-color: #efefef;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  @media (max-width: 768px) {
+    .proyectos{
+      grid-template-columns: 1fr;
+    }
+  }
   
   
-  .presentacion{
+  .concepto{
       box-shadow: 3px 3px 20px rgba(168, 168, 168, 0.749);
       margin-top: 30px;
       margin-left: auto;
       margin-right: auto;
       padding: 20px 20px;
-      width: 500px;
+      width: 75%;
       border-radius: 2%;
-      width: 90%;
-      max-width: 400px;
-      height: 500px;
+    
+      max-width: 800px;
+      height: 400px;
       font-family: "museo-sans", sans-serif;
-      font-size: 12px;
-      background-color: gainsboro;
+      font-size: 1em;
+      background-color: rgb(237, 237, 237);
   
   }
+  .servicios{
+
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px;
+    width: 75%;
+    border-radius: 2%;
+  
+    max-width: 800px;
+    height: 400px;
+    font-family: "museo-sans", sans-serif;
+    font-size: 1em;
+
+
+}
+.contactoa{
+
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px;
+  width: 75%;
+  border-radius: 2%;
+
+  max-width: 800px;
+  height: 400px;
+  font-family: "museo-sans", sans-serif;
+  font-size: 1em;
+  
+
+}
+.lli{list-style: none;
+  width: 100%;
+  height: 500px;
+}
+.ell{list-style: none;
+  width: 100%;
+  height: 500px;
+}
+#name{width: 60%;
+  font-family: "museo-sans", sans-serif;
+      background-color: #e6e6e6;
+      font-size: 12px; 
+      margin-bottom: 20px;
+}
+#mail{width: 60%;
+  font-family: "museo-sans", sans-serif;
+      background-color: #e6e6e6;
+      font-size: 12px; 
+      margin-bottom: 20px;
+}
+#msg{width: 60%;
+  font-family: "museo-sans", sans-serif;
+      background-color: #e6e6e6;
+      font-size: 12px; 
+      height: 100px;
+      margin-bottom: 20px;
+      text-align: right;
+}
+#but{
+      display: block;
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      width: 200px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: white;
+      color: #49839e;
+  
+      text-decoration: none;
+      font-family: "museo-sans", sans-serif;
+      font-size: 12px;
+}
   .fpresentacion{
-      box-shadow: 3px 3px 20px rgba(168, 168, 168, 0.749);
+      box-shadow: 3px 3px 20px rgba(26, 26, 26, 0.749);
       opacity: 40%;
       margin-top: 30px;
       margin-left: auto;
@@ -125,7 +246,7 @@
   
   .t2{ 
       font-family: "museo-sans", sans-serif;
-      font-size: 14px;
+      font-size: 2em;
       font-weight: 300;
       font-style: normal;
       color: #7e7e7e;
@@ -135,6 +256,18 @@
   padding: 10px 0px 0px 10px ;
   
   }
+  .mes1{ 
+    font-family: "museo-sans", sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    font-style: normal;
+    color: #7e7e7e;
+margin-left: auto;
+margin-right: auto;
+width: 200px;
+padding: 10px 0px 0px 10px ;
+
+}
   
   .imagen{
   margin-left: auto;
@@ -150,7 +283,7 @@
   
   }
   
-  .contacto{
+  .mmenu{
       display: block;
       margin-top: 30px;
       margin-left: auto;
@@ -167,7 +300,7 @@
       font-size: 12px;
       
   }
-  .contacto:hover{
+  .mmenu:hover{
       display: block;
       margin-top: 30px;
       margin-left: auto;

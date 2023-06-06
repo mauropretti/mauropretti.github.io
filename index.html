@@ -13,61 +13,80 @@
   </style>
   <script type="module" src="./index.js"></script>
 <body><nav class="nav">
-  <p><img src="mtti03com.png" class="imagen" width="150" alt="Foto de Mauro"></p>
+  <p><img src="images/mtti03com.png" class="imagen" width="150" alt="Foto de Mauro"></p>
   <ul>
     <li>
-      <a href="">home</a>
+      <a href="#home" class="mmenu">home</a>
     </li>
     <li>
-      <a href="">concepto</a>
+      <a href="#concepto" class="mmenu">concepto</a>
     </li>
     <li>
-      <a href="">servicios</a>
+      <a href="#servicios" class="mmenu">servicios</a>
       <li>
-        <a href="">proyectos</a>
+        <a href="#proyectos" class="mmenu">proyectos</a>
       </li>
-    </li>
     <li>
-      <a href="">contacto</a>
+      <a href="#contacto" class="mmenu">contacto</a>
     </li>
   </ul>
 </nav><div class="contenedor">
   
-  <div class="presentacion">
+  <div class="presentacion1">
   <main>
  
-    <h1 class="nombre"></h1>
-    <div class="texto"><p>concepto</p></div>
-  
-    <section><div class="servicios">
+
+    <div class="concepto" id="concepto"> <h2 class="t2">concepto</h2><a>Cree este espacio digital al que llamó mtti03 nombre que surge de modificar mi nombre real y el número tres dia que cobre vida.
+      en este estudio o espacio vas a encontrar mi experiencia mis proyectos y mis herramientas disponibles para que puedas pensar e imaginar tu espacio digital para vos, tu proyecto, tu emprendimiento, tu vida, tu arte o tu empresa. 
+      tengo una experiencia de unos 15 años en el diseño y desarrollo web. Y como la trayectoria solo es eso… sigo estudiando y capacitándome para profundizar conocimientos y estar al día en  las nuevas técnicas y formatos del frontend.</a></div>
+    <section><div class="servicios" id="servicios">
       <h2 class="t2">servicios</h2>
-      <ul>
-        <li>Html</li>
-        <li>Css</li>
-        <li>Js</li>
+      <ul class="ell">
+        <li>Diseño web responsivo</li>
+        <li>Desarrollo web</li>
+        <li>Asesoría en dominio y hospedaje web</li>
+        <li>Rediseño</li>
+        <li>Seo y posicionamiento en motores web</li>
+        <li>Análisis de sitios web</li>
       </ul></div>
     </section>
-    <section><div class="proyectos"><h3 class="t2">proyectos</h2><img src="images/projects/1.png" alt="este es el proyecto de IBC">
-      <img src="images/projects/2.png" alt="este es el proyecto de Yoshi">
-      <img src="images/projects/3.png" alt="este es el proyecto de tres">
-      <img src="images/projects/4.png" alt="este es el proyecto de cuatro">
-      <img src="images/projects/5.png" alt="este es el proyecto de cinco">
-      <img src="images/projects/6.png" alt="este es el proyecto de 6">
+    <section><h3 class="t2">proyectos</h3><div class="proyectos" id="proyectos"><img src="images/1.jpg" alt="este es el proyecto de IBC">
+      <img src="images/2.jpg" alt="este es el proyecto de Yoshi">
+      <img src="images/3.jpg" alt="este es el proyecto de tres">
+      <img src="images/4.jpg" alt="este es el proyecto de cuatro">
+      <img src="images/5.jpg" alt="este es el proyecto de cinco">
+      <img src="images/6.jpg" alt="este es el proyecto de 6">
       </div>
     </section>
-   
+    <section>
   </main> </div>
- 
-  <footer> <section>
-  </footer>
+  <div><div class="contactoa" id="contacto"><h2 class="t2">contacto</h2><form action="/my-handling-form-page" method="post">
+    <ul class="lli">
+     <li>
+       <label for="name">Nombre:</label>
+       <input type="text" id="name" name="user_name" />
+     </li>
+     <li>
+       <label for="mail">Correo electrónico:</label>
+       <input type="email" id="mail" name="user_email" />
+     </li>
+     <li>
+       <label for="msg" ckass="mes1">Mensaje:</label>
+       <textarea id="msg" name="user_message"></textarea>
+     </li><li class="button">
+      <button type="submit" id="but">Envíe su mensaje</button>
+    </li></ul></form></div>
+ <div id="map"><script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2y9shF0Gcy_GoYIwd1w14R5LmAXfXedw&callback=initMap&v=weekly"
+  defer
+></script></div></div>
+
+<div><section>Mauro Pretti 2023</section></div></div>
+
+
 </div>
 
-<div id="map"></div>
-      </body>
-      <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2y9shF0Gcy_GoYIwd1w14R5LmAXfXedw&callback=initMap&v=weekly"
-        defer
-      ></script>
+  
 </body>
 
 </html>
