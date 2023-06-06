@@ -1,3 +1,9 @@
+/**
+ * @license
+ * Copyright 2019 Google LLC. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+// [START maps_map_simple]
 let map;
 
 async function initMap() {
@@ -9,3 +15,4 @@ async function initMap() {
 }
 
 initMap();
+// [END maps_map_simple]
