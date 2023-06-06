@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 let map;
-const Chicago = { lat: -34.5822599, lng: -58.4428659 };
+const chicago = { lat: 41.85, lng: -87.65 };
 
 /**
  * Creates a control that recenters the map on Chicago.
@@ -26,9 +26,9 @@ function createCenterControl(map) {
 }
 
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 123.644},
-    zoom: 8
+  map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: { lat: 49.496675, lng: -102.65625 },
   });
 
   var georssLayer = new google.maps.KmlLayer({
