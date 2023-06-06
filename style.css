@@ -9,7 +9,11 @@
  * that contains the map. 
  */
 #map {
-  height: 100%;
+  width: 50%;
+      height: 400px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: auto;
 }
 
 /* 
