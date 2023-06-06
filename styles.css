@@ -1,3 +1,58 @@
+body{
+  margin: 0;
+  background-color:rgb(231, 233, 235);
+  font-family: "museo-sans", sans-serif;
+  }
+  img{max-width: 100%;}
+.toggle-menu{
+  position: fixed;
+  top: 0.5rem;
+  right: 1.5rem;
+  cursor:pointer;
+    width: 40px;
+z-index: 1;}
+
+@media screen and (min-width: 768px) {
+      .toggle-menu{
+          display: none;
+      }
+  }
+.main-menu{
+list-style: none;
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: rgb(138, 177, 255);
+transition: transform 0.3s;
+transform: translate(-100%);
+}
+.main-menu--show{
+transform: translate(0);
+}
+.toggle-menu__checkbox{display: none;}
+.toggle-menu__checkbox:checked +.main-menu{
+transform: translate(0);
+}
+
+@media screen and (min-width: 768px){
+  .main-menu{
+      flex-direction: row;
+      transform: translate(0);
+  }
+}
+
+.main-menu__item{
+padding: 1em;
+}
+.main-menu__link{
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 
 .contenedor{
     /*  background-image: url("background.jpg");*/
@@ -14,42 +69,7 @@
 .contenedor-s{
   width: min(100%, 33.5em); /* 16px => 537 / 16 = 33.5625 */
 }
-  .nav {
-    
-    display: grid;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "museo-sans", sans-serif;
-    margin-right: auto;
-    margin-left: auto;
-    text-decoration: none; 
-    
-    flex-direction: row;
-    gap: 20px;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    position: relative;
-  }
   
-  .nav p{
-    font-weight: 700;
-    font-size: 2.12rem;
-    margin: 0;
-  }
-  
-  .nav ul{
-    display: inline-flex;
-    list-style-type: none;
-    gap: 16px;
-    margin:0;
-    padding:0;
-  }
-  .nav link{
-    display: inline-flex;
-    list-style-type: none;
-    text-decoration: none; 
-  }
   .h2{ 
       font-family: "museo-sans", sans-serif;
       font-size: 22px;
@@ -63,11 +83,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
   }
-  @media (max-width: 768px) {
-    .proyectos{
-      grid-template-columns: 1fr;
-    }
-  }
+ 
   
   
   .concepto{
@@ -288,24 +304,7 @@ padding: 10px 0px 0px 10px ;
   
   }
   
-  .mmenu{
-      display: block;
-      margin-top: 30px;
-      margin-left: 20px;
-      margin-right: auto;
-      text-align: center;
-      width: 40px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background-color: white;
-      color: #49839e;
-  
-      text-decoration: none;
-      font-family: "museo-sans", sans-serif;
-      font-size: 1rem;
-      justify-content: space-evenly;
-      align-items: flex-start;
-  }
+
   
   .descarga{
       display: block;
@@ -351,3 +350,5 @@ padding: 10px 0px 0px 10px ;
       height: 500px;
   font-family: "museo-sans", sans-serif;    font-size: 12px;
   }
+
+

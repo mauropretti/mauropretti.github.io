@@ -8,29 +8,39 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://use.typekit.net/cbj7ybt.css">
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <script type="module"  src="scripts.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  
 
-  </style>
   <script type="module" src="./index.js"></script>
-<body><nav class="nav">
-  <p><img src="images/mtti03com.png" class="imagen" width="150" alt="Foto de Mauro"></p>
-  <ul>
-    <li>
-      <a href="#home" class="mmenu" >home</a>
-    </li>
-    <li>
-      <a href="#concepto" class="mmenu">concepto</a>
-    </li>
-    <li>
-      <a href="#servicios" class="mmenu">servicios</a>
-      <li>
-        <a href="#proyectos" class="mmenu">proyectos</a>
+<body>
+  <div class="logo"><p><img src="images/mtti03com.png" class="imagen" width="150" alt="Foto de Mauro"></p></div>
+
+  <nav class="main-nav">
+    <div id="toggle-menu" class="toggle-menu">
+      
+      <label><img src="images/hicon.png" alt="" /></label></div>
+    <imput type="checkbox" name="" class="toggle-menu__checkbox" id="toggle-menu-checkbox"></imput>
+    <ul id="main-menu" class="main-menu">
+      <li class="main-menu__item">
+        <a href="#home" class="main-menu__link" >home</a>
       </li>
-    <li>
-      <a href="#contacto" class="mmenu" >contacto</a>
-    </li>
-  </ul>
-</nav><div class="contenedor">
+      <li class="main-menu__item">
+        <a href="#concepto" class="main-menu__link">concepto</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#servicios" class="main-menu__link">servicios</a>
+        <li class="main-menu__item">
+          <a href="#proyectos" class="main-menu__link">proyectos</a>
+        </li>
+      <li class="main-menu__item">
+        <a href="#contacto" class="main-menu__link" >contacto</a>
+      </li>
+    </ul>
+  </nav>
+  
+  
+  <div class="contenedor">
   
   <div class="presentacion1">
   <main>
