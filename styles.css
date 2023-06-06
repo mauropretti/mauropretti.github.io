@@ -15,9 +15,8 @@
   width: min(100%, 33.5em); /* 16px => 537 / 16 = 33.5625 */
 }
   .nav {
-    /* display: grid;
-    grid-template-columns: 1fr auto; */
-    display: flex;
+    
+    display: grid;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -25,6 +24,12 @@
     margin-right: auto;
     margin-left: auto;
     text-decoration: none; 
+    
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: relative;
   }
   
   .nav p{
@@ -75,7 +80,7 @@
       border-radius: 2%;
     
       max-width: 800px;
-      height: 400px;
+      height: 600px;
       font-family: "museo-sans", sans-serif;
       font-size: 1em;
       background-color: rgb(237, 237, 237);
@@ -249,7 +254,7 @@
       font-size: 2em;
       font-weight: 300;
       font-style: normal;
-      color: #7e7e7e;
+      color: #12aa21;
   margin-left: auto;
   margin-right: auto;
   width: 200px;
@@ -286,10 +291,10 @@ padding: 10px 0px 0px 10px ;
   .mmenu{
       display: block;
       margin-top: 30px;
-      margin-left: auto;
+      margin-left: 20px;
       margin-right: auto;
       text-align: center;
-      width: 200px;
+      width: 40px;
       padding-top: 10px;
       padding-bottom: 10px;
       background-color: white;
@@ -297,26 +302,11 @@ padding: 10px 0px 0px 10px ;
   
       text-decoration: none;
       font-family: "museo-sans", sans-serif;
-      font-size: 12px;
-      
+      font-size: 1rem;
+      justify-content: space-evenly;
+      align-items: flex-start;
   }
-  .mmenu:hover{
-      display: block;
-      margin-top: 30px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      width: 200px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background-color: #7d8080;
-      color: white;
   
-  text-shadow: #7e7e7e;
-  font-family: "museo-sans", sans-serif;
-      font-size: 12px;
-      
-  }
   .descarga{
       display: block;
       margin-top: 10px;
