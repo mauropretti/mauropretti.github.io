@@ -34,12 +34,13 @@ position: absolute;z-index: 5;
 
 }
 .main-menu--show{
-transform: translate(0);
+  transform: translate(0);
 position: fixed;z-index: 5;
 /*position:fixed;
 width: 100%;
 display: flow-root;*/
 }
+
 .toggle-menu__checkbox{display: none;}
 .toggle-menu__checkbox:checked +.main-menu{
 transform: translate(0);
@@ -89,6 +90,11 @@ padding: 1em;
     background-color: #efefef;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+  }
+
+  .proyimg{
+  border-radius: 3%;
+  margin: 20px;
   }
   .logo{box-shadow: 3px 3px 20px rgba(168, 168, 168, 0.749);
       margin-top: 0px;
@@ -141,6 +147,15 @@ padding: 1em;
 background: linear-gradient(180deg, rgba(197,200,206,0) 0%, rgba(197,200,206,0.43043154761904767) 47%, rgba(197,200,206,0.702140231092437) 97%, rgba(197,200,206,1) 100%);
 }
 .contactoa{
+  margin-right: auto;
+  width: 75%;
+  max-width: 800px;
+  height: 20px;
+  font-family: "museo-sans", sans-serif;
+  font-size: 1em;
+
+}
+.formi{
 
   margin-top: 30px;
   margin-left: auto;
@@ -153,12 +168,24 @@ background: linear-gradient(180deg, rgba(197,200,206,0) 0%, rgba(197,200,206,0.4
   height: 400px;
   font-family: "museo-sans", sans-serif;
   font-size: 1em;
-  
+display: inline-block;
+align-items: center;
 
+}
+#map {
+  width: 30%;
+      height: 250px;
+      min-width: 250px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: 0;
+      display: inline-block;
+      align-items: top;
 }
 .lli{list-style: none;
   width: 100%;
   height: 500px;
+  
 }
 .ell{list-style: none;
   width: 100%;
@@ -183,6 +210,7 @@ background: linear-gradient(180deg, rgba(197,200,206,0) 0%, rgba(197,200,206,0.4
       height: 100px;
       margin-bottom: 20px;
       text-align: right;
+      align-items: center;
 }
 #but{
       display: block;
@@ -256,10 +284,13 @@ background: linear-gradient(180deg, rgba(197,200,206,0) 0%, rgba(197,200,206,0.4
     color: #7e7e7e;
 margin-left: auto;
 margin-right: auto;
-width: 200px;
+
 padding: 10px 0px 0px 10px ;
 
+
 }
+
+
   
   .imagen{
   margin-left: auto;
@@ -276,16 +307,15 @@ padding: 10px 0px 0px 10px ;
   }
   
 
-.footer{margin-left: auto;
-      margin-right: auto;
-  
-      padding: 0px ;
-      width: 500px;
-      border-radius: 2%;
-      width: 90%;
-      max-width: 400px;
-      height: 500px;
-  font-family: "museo-sans", sans-serif;    font-size: 12px;
+.footer{
+  margin: 0;
+  background-color: darkgray;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  height: 10px;
+  font-family: "museo-sans", sans-serif;
+  font-size: 12px;
   }
 
 

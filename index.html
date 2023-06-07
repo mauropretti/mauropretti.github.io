@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://use.typekit.net/cbj7ybt.css">
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <script type="module"  src="scripts.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css" />
   
 
   <script type="module" src="./index.js"></script>
@@ -58,28 +57,34 @@
         <li>Análisis de sitios web</li>
       </ul></div>
     </section>
-    <section><h3 class="t2">Proyectos</h3><div class="proyectos" id="proyectos"><img src="images/1.jpg" alt="este es el proyecto de IBC">
-      <img src="images/2.jpg" alt="este es el proyecto de Yoshi">
-      <img src="images/3.jpg" alt="este es el proyecto de tres">
-      <img src="images/4.jpg" alt="este es el proyecto de cuatro">
-      <img src="images/5.jpg" alt="este es el proyecto de cinco">
-      <img src="images/6.jpg" alt="este es el proyecto de 6">
+    <section><h3 class="t2">Proyectos</h3><div class="proyectos" id="proyectos"><img src="images/1.jpg" alt="este es el proyecto de IBC" class="proyimg">
+      <img src="images/2.jpg" alt="este es el proyecto de Yoshi" class="proyimg">
+      <img src="images/3.jpg" alt="este es el proyecto de tres" class="proyimg">
+      <img src="images/4.jpg" alt="este es el proyecto de cuatro" class="proyimg">
+      <img src="images/5.jpg" alt="este es el proyecto de cinco" class="proyimg">
+      <img src="images/6.jpg" alt="este es el proyecto de 6" class="proyimg">
       </div>
     </section>
     <section>
   </main> </div>
-  <div><div class="contactoa" id="contacto"><h2 class="t2">Contacto</h2><form action="/my-handling-form-page" method="post">
+  <div><div class="contactoa" id="contacto"><h2 class="t2">Contacto</h2></div><div class="formi"><form action="/my-handling-form-page" method="post">
     <ul class="lli">
+      <li>
+        <label for="name">Nombre:</label>
+      </li>
      <li>
-       <label for="name">Nombre:</label>
        <input type="text" id="name" name="user_name" />
      </li>
      <li>
-       <label for="mail">Email:</label>
+      <label for="mes1">email:</label>
+    </li>
+     <li>
        <input type="email" id="mail" name="user_email" />
      </li>
      <li>
-       <label for="msg" ckass="mes1">Mensaje:</label>
+      <label for="mes1">Mensaje:</label>
+    </li>
+     <li>
        <textarea id="msg" name="user_message"></textarea>
      </li><li class="button">
       <button type="submit" id="but">Envíe su mensaje</button>
@@ -88,10 +93,4 @@
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2y9shF0Gcy_GoYIwd1w14R5LmAXfXedw&callback=initMap&v=weekly"
   defer
 ></script></div></div>
-
-<div><section>Mauro Pretti 2023</section></div>
-
-  
-</body>
-
-</html>
+<div class="footer">mtti03 © Mauro Pretti 2023</div></body></html>
