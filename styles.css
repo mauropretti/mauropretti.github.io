@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  background-color:rgb(231, 233, 235);
+  background-color:#e0ddd8;
   font-family: "museo-sans", sans-serif;
   }
   img{max-width: 100%;}
@@ -22,16 +22,22 @@ list-style: none;
 margin-top: 0;
 margin-bottom: 0;
 padding-left: 0;
-
-display: flex;
+width: 100%;
+display:flex;
 flex-direction: column;
 align-items: center;
-background-color: rgb(138, 177, 255);
+background-color: #6568ab;
 transition: transform 0.3s;
 transform: translate(-100%);
+position: fixed;
+z-index: 5;
 }
 .main-menu--show{
 transform: translate(0);
+
+/*position:fixed;
+width: 100%;
+display: flow-root;*/
 }
 .toggle-menu__checkbox{display: none;}
 .toggle-menu__checkbox:checked +.main-menu{
@@ -40,7 +46,7 @@ transform: translate(0);
 
 @media screen and (min-width: 768px){
   .main-menu{
-      flex-direction: row;
+      flex-direction:row;
       transform: translate(0);
   }
 }
@@ -83,40 +89,55 @@ padding: 1em;
     display: grid;
     grid-template-columns: repeat(3,1fr);
   }
+  .logo{box-shadow: 3px 3px 20px rgba(168, 168, 168, 0.749);
+      margin-top: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px 20px;
+      width: 100px;
+      border-radius: 2%;
+    
+      max-width: 200px;
+      height: 160px;
+      font-family: "museo-sans", sans-serif;
+      font-size: 1em;
+      background-color: rgb(255, 255, 255);
+
+  }
  
   
   
   .concepto{
+    position:absolute;
       box-shadow: 3px 3px 20px rgba(168, 168, 168, 0.749);
-      margin-top: 30px;
+      margin-top: 100px;
       margin-left: auto;
       margin-right: auto;
       padding: 20px 20px;
       width: 75%;
       border-radius: 2%;
-    
-      max-width: 800px;
-      height: 600px;
+    position: relative;
+      max-width: 1024px;
+      height: 100%;
       font-family: "museo-sans", sans-serif;
       font-size: 1em;
-      background-color: rgb(237, 237, 237);
+      background-color: rgb(237, 237, 237);z-index: 3;
   
   }
   .servicios{
-
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 20px;
-    width: 75%;
-    border-radius: 2%;
+    margin-left: 0;
+    margin-right: 0;
   
-    max-width: 800px;
-    height: 400px;
+    width: 100%;
+    border-radius: 0%;
+  
+    
+    height: 300px;
     font-family: "museo-sans", sans-serif;
     font-size: 1em;
-
-
+    background: rgb(197,200,206);
+background: linear-gradient(180deg, rgba(197,200,206,0) 0%, rgba(197,200,206,0.43043154761904767) 47%, rgba(197,200,206,0.702140231092437) 97%, rgba(197,200,206,1) 100%);
 }
 .contactoa{
 
@@ -194,58 +215,6 @@ padding: 1em;
       background-color: #49839e;
       font-size: 12px; 
    }
-  .habilidades{
-      box-shadow: 3px 3px 20px rgba(168, 168, 168, 0.749);
-      margin-top: 20px;
-      overflow:hidden;
-      padding: 0;
-      width: 300px;
-      border-radius: 5%;
-      width: 40%;
-      max-width: 300px;
-      height: 120px;
-     float:left;
-     background-color: rgb(255, 255, 255);
-     font-weight: 300;
-     font-style: italic;
-     font-family: "museo-sans", sans-serif;
-     font-size: 12px;
-  
-  }
-  .otrashab{
-      margin-top: 20px;
-      float: left;
-      overflow:hidden;
-      padding: 0;
-      width: 320px;
-      border-radius: 5%;
-      width: 50%;
-      max-width: 300px;
-      height: 120px;
-      background-color: rgb(238, 238, 238);
-      
-      font-weight: 300;
-  font-style: italic;
-      font-family: "museo-sans", sans-serif;
-      font-size: 12px;
-  
-  }
-  
-  .icons{
-      opacity: 40%;
-      margin-top: 25px;
-  overflow:hidden;
-      padding: 0;
-      border-radius: 5%;
-      width: 10%;
-      max-width: 300px; 
-      height: 120px;
-  
-  text-align: center;  
-  
-  
-  }
-  
   
   .nombre{
   
@@ -266,15 +235,16 @@ padding: 1em;
   }
   
   .t2{ 
-      font-family: "museo-sans", sans-serif;
-      font-size: 2em;
-      font-weight: 300;
+    font-family: "fatfrank", sans-serif;
+      font-size: 1.5em;
+      font-weight: 400;
       font-style: normal;
-      color: #12aa21;
-  margin-left: auto;
-  margin-right: auto;
+      color: #205129;
+  margin-left: 0;
+  margin-right: 0;
   width: 200px;
-  padding: 10px 0px 0px 10px ;
+  padding: 0px 0px 0px 10px ;
+  text-align: left;
   
   }
   .mes1{ 
@@ -304,40 +274,6 @@ padding: 10px 0px 0px 10px ;
   
   }
   
-
-  
-  .descarga{
-      display: block;
-      margin-top: 10px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      width: 200px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background-color:    #49839e;
-      color: rgb(255, 255, 255);
-      text-decoration: none;
-      font-family: "museo-sans", sans-serif;    font-size: 12px;
-  
-  }
-  .descarga:hover{
-      display: block;
-      margin-top: 10px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      width: 200px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background-color: #7d8080;
-      color: #ffffff;
-      text-decoration: none;
-      font-family: "museo-sans", sans-serif;    font-size: 12px;
-  
-  }
-
- 
 
 .footer{margin-left: auto;
       margin-right: auto;
