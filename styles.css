@@ -87,9 +87,10 @@ padding: 1em;
   
   }
   .proyectos{
-    background-color: #efefef;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    background: rgb(197,200,206);
+background: linear-gradient(180deg, rgba(197,200,206,0) 0%, rgba(197,200,206,0.43043154761904767) 47%, rgba(197,200,206,0.702140231092437) 97%, rgba(197,200,206,1) 100%);
   }
 
   .proyimg{
