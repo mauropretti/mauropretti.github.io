@@ -5,9 +5,10 @@ body{
   height: 100%;
   margin: 0;
   padding: 0;
+
   }
   img{max-width: 100%;}
-.toggle-menu{
+.toggle-menu{ 
   position: fixed;
   top: 0.5rem;
   right: 1.5rem;
@@ -22,6 +23,7 @@ z-index: 1;}
       } .main-menu{position: absolute;z-index: 5;}
   }
 .main-menu{
+  text-align: center;
 list-style: none;
 margin-top: 0;
 margin-bottom: 0;
@@ -29,13 +31,12 @@ padding-left: 0;
 width: 100%;
 display:flex;
 flex-direction: column;
-align-items: center;
 background-color: #6568ab;
 transition: transform 0.3s;
 transform: translate(-100%);
 position: absolute;z-index: 5;
+align-content: center;}
 
-}
 .main-menu--show{
   transform: translate(0);
 position: fixed;z-index: 5;
@@ -52,6 +53,7 @@ transform: translate(0);
 @media screen and (min-width: 768px){
   .main-menu{
       flex-direction:row;
+      text-align: center;
       transform: translate(0);
   }
 }
@@ -64,6 +66,12 @@ padding: 1em;
   text-transform: uppercase;
   text-decoration: none;
 }
+.main-menu__link:hover{
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 
 .contenedor{
     /*  background-image: url("background.jpg");*/
@@ -133,8 +141,7 @@ background: linear-gradient(180deg, rgba(197,200,206,0) 0%, rgba(197,200,206,0.4
       font-family: "museo-sans", sans-serif;
       font-size: 1em;
       background-color: rgb(237, 237, 237);z-index: 3;
-  
-  }
+    }
   .servicios{
     margin-top: 30px;
     margin-left: 0;
@@ -198,6 +205,16 @@ margin-left: 10px;
 font-size: 0,5em;
 
 }
+.sol1{
+  font-family: "dico-code-two", mono;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0,2em;
+  text-align: center;
+  margin-top: 50px;
+color: chartreuse;
+background-color: #205129;
+  }
 #name{width: 60%;
   font-family: "museo-sans", sans-serif;
       background-color: #e6e6e6;
